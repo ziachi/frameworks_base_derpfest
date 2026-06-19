@@ -271,6 +271,11 @@
 
     <!-- Screenshot Tile -->
     <string name="screenshot_long_press">Long press - selected region</string>
-</resources>
 
+    <!-- Spectrum kernel profiles -->
+    <string name="quick_settings_spectrum_label">Spectrum</string>
+    <string name="quick_settings_spectrum_balance">Balance</string>
+    <string name="quick_settings_spectrum_performance">Performance</string>
+    <string name="quick_settings_spectrum_battery">Battery</string>
+    <string name="quick_settings_spectrum_gaming">Gaming</string>
 </resources>
