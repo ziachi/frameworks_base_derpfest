@@ -74,7 +74,7 @@ public final class AttestationHooks {
         try {
             // Unlock
             Class clazz = Build.class;
-            if (key.startsWith("VERSION:")) {
+            if (key.startsWith("VERSION.")) {
                 clazz = Build.VERSION.class;
                 key = key.substring(8);
             }
