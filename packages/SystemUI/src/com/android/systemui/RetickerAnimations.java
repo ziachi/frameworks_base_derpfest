@@ -51,6 +51,10 @@ public class RetickerAnimations {
 
 
     public static void revealAnimation(View targetView) {
+        if (!targetView.isAttachedToWindow()) {
+            targetView.setVisibility(View.VISIBLE);
+            return;
+        }
         int cx = targetView.getWidth() / 2;
         int cy = targetView.getHeight() / 2;
 
@@ -65,6 +69,12 @@ public class RetickerAnimations {
     }
 
     public static void revealAnimationHide(View targetView, View notificationStackScroller) {
+        if (!targetView.isAttachedToWindow()) {
+            notificationStackScroller.setVisibility(View.VISIBLE);
+            targetView.setVisibility(View.GONE);
+            mIsAnimatingTicker = false;
+            return;
+        }
         int cx = targetView.getWidth() / 2;
         int cy = targetView.getHeight() / 2;
 
